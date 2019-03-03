@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hangman Game</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+        <!-- <link href="./main.css" rel="stylesheet" type="text/css"> -->
+        <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    </head>
+    <body>
+        <div class="hangman">
+            <p class="hangman__word"></p>
+            <p class="hangman__guesses"></p>
+            <button class="hangman__reset">New Game</button>
+        </div>
+        <!-- <script src="./scripts.js"></script> -->
+        <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    </body>
+</html>
